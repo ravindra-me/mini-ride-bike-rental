@@ -1,0 +1,25 @@
+.grid{
+    display: grid;
+}
+
+.justify-grid-start{
+    justify-content: start;
+}
+.justify-grid-content{
+    justify-content: center;
+}
+.align-grid-center{
+    align-items: center;
+}
+.align-grid-start{
+    align-items: start;
+}
+.template-column{
+    grid-template-columns: repeat(4, 1fr);
+}
+.span-4{
+    grid-column: span 4;
+}
+.span-2{
+    grid-column: span 2;
+}
