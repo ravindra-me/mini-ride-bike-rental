@@ -59,6 +59,10 @@ table {
   padding: 0;
 }
 
+body {
+  line-height: 1.5;
+}
+
 html {
   font-size: 16px;
 }
@@ -83,8 +87,40 @@ a {
   position: absolute;
 }
 
+.padding {
+  padding: 5rem 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .width-100 {
   width: 100%;
+}
+
+.font-0 {
+  font-size: 0;
+}
+
+.img {
+  width: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+}
+
+.width-30 {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 1rem 2rem;
+}
+
+.secondary-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
 .flex {
@@ -157,12 +193,21 @@ a {
       grid-template-columns: repeat(4, 1fr);
 }
 
+.template-column-2 {
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
 .span-4 {
   grid-column: span 4;
 }
 
 .span-2 {
   grid-column: span 2;
+}
+
+.grid-column-gap {
+  grid-column-gap: 2rem;
 }
 
 header .logo {
@@ -199,5 +244,151 @@ header .nav li a:hover {
 .hero h1 {
   font-size: 5rem;
   font-weight: 800;
+}
+
+.why-onn h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.why-onn p {
+  font-size: 1.2rem;
+  margin-bottom: 5rem;
+}
+
+.why-onn article {
+  border: 1px solid black;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.why-onn article h4 {
+  font-size: 1.23rem;
+  margin-top: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.why-onn article p {
+  text-align: center;
+  margin: 0;
+  margin: 1rem 0;
+}
+
+.about-sec {
+  background-color: black;
+  color: white;
+}
+
+.about-sec article {
+  grid-column-gap: 4rem;
+}
+
+.about-sec article .about-content
+h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.about-sec article h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about-sec article p {
+  color: #677682;
+  margin-bottom: 2rem;
+}
+
+.about-sec article i {
+  margin-right: 1rem;
+}
+
+.about-sec article a {
+  color: white;
+  background: #e34f0d;
+  border-radius: 0.25rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-box-shadow: 0 3px 0 rgba(160, 193, 184, 0.8);
+          box-shadow: 0 3px 0 rgba(160, 193, 184, 0.8);
+}
+
+.about-sec article a:hover {
+  background-color: white;
+  color: black;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
+.about-sec article .reserve-btn {
+  background-color: white;
+  color: black;
+  margin-left: 1rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-box-shadow: 0 3px 0 rgba(160, 193, 184, 0.8);
+          box-shadow: 0 3px 0 rgba(160, 193, 184, 0.8);
+}
+
+.about-sec article .reserve-btn:hover {
+  background-color: #e34f0d;
+  color: white;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
+.about-sec .overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.about-sec .overlay a {
+  padding: 1rem;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  -webkit-transition: background 1s ease-in-out , color 1s ease-in-out;
+  transition: background 1s ease-in-out , color 1s ease-in-out;
+}
+
+.about-sec .overlay a:hover {
+  background: white;
+  color: black;
+  font-size: 1.25rem;
+}
+
+.faq-sec p.text-center {
+  margin: 1.5rem 0;
+  margin-bottom: 3rem;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.faq-sec .grid {
+  grid-column-gap: 10rem;
+}
+
+.faq-sec article {
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  padding: 1rem;
+}
+
+.faq-sec article i {
+  font-size: 1rem;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.faq-sec article h5 {
+  font-size: 1.25rem;
+  margin: 1rem 0;
 }
 /*# sourceMappingURL=style.css.map */

@@ -7,3 +7,130 @@
         font-weight: 800;
     }
 }
+
+.why-onn{
+
+    h2{
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+    p{
+        font-size: 1.2rem;
+        margin-bottom: 5rem;
+    }
+    article{
+        border: 1px solid black;
+        border-radius: 0.8rem;
+        padding: 1rem;
+        text-align: center;
+        h4{
+            font-size: 1.23rem;
+            margin-top: 2rem;
+            font-weight: 600;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            margin: 0;
+            margin:1rem 0; 
+        }
+    }
+}
+.about-sec{
+    background-color: black;
+    color: white;
+   
+    article{
+        grid-column-gap: 4rem;
+        .about-content
+            h4{
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+            }
+            h3{
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+            p{
+                color: rgb(103,118,130);
+                margin-bottom: 2rem;
+            }
+            i{
+                margin-right: 1rem;;
+            }
+            a{
+                color: white;
+                background: $btn-bg-color;
+                border-radius: 0.25rem;
+                transition: all 0.5s ease-in-out;
+                box-shadow: 0 3px 0 rgba(#a0c1b8, 0.8);
+                &:hover{
+                    background-color: white;
+                    color: black;
+                    transform: translateY(3px);
+                }
+            }
+            .reserve-btn{
+                background-color: white;
+                color: black;
+                margin-left: 1rem;
+                transition: all 0.5s ease-in-out;
+                box-shadow: 0 3px 0 rgba(#a0c1b8, 0.8);
+                &:hover{
+                    background-color: $btn-bg-color;
+                    color: white;
+                    transform: translateY(3px);
+                }
+            }
+        }
+        .overlay{
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.1); 
+            a{
+                padding: 1rem;
+                border: 1px solid white;
+                color: white;
+                cursor: pointer;
+                border-radius: 0.25rem;
+                transition: background 1s ease-in-out , color 1s ease-in-out;
+                &:hover{
+                    background: white;
+                    color: black;
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    
+    }
+
+    .faq-sec{
+        p.text-center{
+            margin: 1.5rem 0;
+            margin-bottom: 3rem;
+            font-weight: 500;
+            font-size: 1.25rem;
+        }
+        .grid{
+            grid-column-gap: 10rem;
+        }
+        article{
+            border: 1px solid black;
+            border-radius: 0.25rem;
+            padding: 1rem;
+            i{
+                font-size: 1rem;
+                display: inline-block;
+                margin-right: 0.5rem;
+            }
+            h5{
+                font-size: 1.25rem;
+                margin: 1rem 0;
+            }
+
+        }
+    }
+ 
