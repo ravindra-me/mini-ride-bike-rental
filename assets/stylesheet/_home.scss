@@ -1,18 +1,34 @@
 .hero{
-    background: url("../imgs/harley-davidson-rEPAjhzt7TY-unsplash.jpg") 50% 75% no-repeat;
+    background:linear-gradient(rgba(0,0,0,0.2), rgba(black,0.2)), url("../imgs/harley-davidson-rEPAjhzt7TY-unsplash.jpg") 65% 70% no-repeat;
     background-size: cover;
     height: 100vh;
+    // transition: 5s;
+    // animation-name: image;
+    // animation-direction: alternate-reverse;
+    // animation-duration: 10s;
+    // animation-iteration-count: infinite;
+    // animation-timing-function: ease-in-out;
     h1{
         font-size: 5rem;
         font-weight: 800;
     }
 }
+// @keyframes image {
+//     0%{
+//         background: url("../imgs/harley-davidson-rEPAjhzt7TY-unsplash.jpg");
+//     }
+//     // }
+//     // 20%{
+//     //     background: url("../imgs/Smarter-Mobility.svg");
+//     // }
+//     // 100%{
+//     //     background: url("../imgs/royal-enfield-SlF40JIv82s-unsplash.jpg");
+//     // }
+// }
 
 .why-onn{
 
     h2{
-        font-size: 2rem;
-        font-weight: 600;
         margin-bottom: 2rem;
     }
     p{
@@ -133,4 +149,61 @@
 
         }
     }
- 
+    .included-services{
+        article{
+            
+        }
+    }
+ footer{
+     background: $footer-bg-color;
+    .container{
+        border-bottom: 1px solid $footer-text-color;
+        padding: 3rem;
+    }
+     h3{
+         color: white;
+         font-size:2rem;
+         margin-bottom: 1.5rem;
+     }
+     nav {
+        li{
+            color: $footer-text-color;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            span,a{
+                color: $footer-text-color;
+                transition: all 0.25s ease-in-out;
+                i{
+                    margin-right: 1rem;
+                }
+                &:hover{
+                border-bottom: 0.1rem solid $footer-text-color;
+                color: $btn-bg-color;
+            }
+        }  
+        }
+    }
+    .follow-us{
+        li{
+            margin-right: 1rem;
+            a{
+                width: 2rem;
+                height: 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                border-radius: 50%;
+                transition:all 0.5s ease-in-out;
+                i{
+                    margin: 0;
+                }
+                
+                &:hover{
+                    background: $btn-bg-color;
+                    color: black;
+                }
+            }
+        }
+    }
+ }

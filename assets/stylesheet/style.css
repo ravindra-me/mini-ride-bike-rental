@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -61,6 +62,7 @@ table {
 
 body {
   line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -210,6 +212,10 @@ a {
   grid-column-gap: 2rem;
 }
 
+header {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 header .logo {
   font-size: 2rem;
   font-weight: 700;
@@ -228,15 +234,12 @@ header .nav li a {
   -webkit-transition: border-top 1s ,border-bottom 1s;
   transition: border-top 1s ,border-bottom 1s;
   font-size: 1.5rem;
-}
-
-header .nav li a:hover {
-  border-top: 2px solid red;
-  border-bottom: 2px dashed yellow;
+  color: white;
 }
 
 .hero {
-  background: url("../imgs/harley-davidson-rEPAjhzt7TY-unsplash.jpg") 50% 75% no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../imgs/harley-davidson-rEPAjhzt7TY-unsplash.jpg") 65% 70% no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../imgs/harley-davidson-rEPAjhzt7TY-unsplash.jpg") 65% 70% no-repeat;
   background-size: cover;
   height: 100vh;
 }
@@ -247,8 +250,6 @@ header .nav li a:hover {
 }
 
 .why-onn h2 {
-  font-size: 2rem;
-  font-weight: 600;
   margin-bottom: 2rem;
 }
 
@@ -390,5 +391,76 @@ h4 {
 .faq-sec article h5 {
   font-size: 1.25rem;
   margin: 1rem 0;
+}
+
+.included-services article img {
+  height: 400px;
+}
+
+footer {
+  background: #242c38;
+}
+
+footer .container {
+  border-bottom: 1px solid #8b8e99;
+  padding: 3rem;
+}
+
+footer h3 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+footer nav li {
+  color: #8b8e99;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+footer nav li span, footer nav li a {
+  color: #8b8e99;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+footer nav li span i, footer nav li a i {
+  margin-right: 1rem;
+}
+
+footer nav li span:hover, footer nav li a:hover {
+  border-bottom: 0.1rem solid #8b8e99;
+  color: #e34f0d;
+}
+
+footer .follow-us li {
+  margin-right: 1rem;
+}
+
+footer .follow-us li a {
+  width: 2rem;
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+footer .follow-us li a i {
+  margin: 0;
+}
+
+footer .follow-us li a:hover {
+  background: #e34f0d;
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */
