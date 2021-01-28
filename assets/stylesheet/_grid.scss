@@ -20,6 +20,9 @@
 .template-column-2{
     grid-template-columns: repeat(2,1fr);
 }
+.template-column-3{
+    grid-template-columns: repeat(3,1fr);
+}
 .span-4{
     grid-column: span 4;
 }
@@ -27,5 +30,8 @@
     grid-column: span 2;
 }
 .grid-column-gap{
-    grid-column-gap: 2rem;
+    grid-column-gap: 3rem;
+}
+.gap{
+    gap: 3rem;
 }

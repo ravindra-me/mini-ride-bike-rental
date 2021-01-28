@@ -1,0 +1,73 @@
+#hire{
+    .search-box{
+        padding: 0.5rem 1rem;
+        box-shadow: 0 2px 20px rgba(black,0.2);
+        border-radius: 0.25rem;
+        margin-top: 2rem;
+        i{
+            font-size: 2rem;
+            color: rgba(black,0.2);
+        }
+        input{
+            width: 100%;
+            display: inline-block;
+            border: none;
+            outline: none;
+            font-size: 1.5rem;
+            padding: 0.25rem 0;
+            margin-left: 2rem;
+            border-radius: 0.25rem;
+            input::placeholder{
+                font-size: 1rem;
+                opacity: 0.5;
+            }
+        }
+    }
+    .hire-hero{
+        background: linear-gradient(rgba(black,0.5) , rgba(black,0.5)) , url("../imgs/clement-roy-ecaLOU8I76M-unsplash.jpg") center no-repeat ;
+        padding: 25rem 0;
+        background-size: cover;
+        background-attachment: fixed;
+        h2{
+            color: white;
+            font-size: 4rem;
+            letter-spacing: 0rem;
+        }
+    }
+    .bikes-section{
+        article{
+            h3{
+                color: black;
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+            img{
+                width: 375px;
+                height: 348px;
+                object-fit: contain;
+            }
+            .price{
+                font-weight: 600;
+            }
+        }
+        .card-text{
+            div{
+                margin-top: 1rem;
+                padding-bottom: 1rem;
+            }
+        }
+        .btn{
+            margin-top: 1rem;
+            border-radius: 0.8rem;
+            font-size: 1.2rem;
+            padding: 0.8rem 2rem;
+            background-color: $btn-bg-color;
+            transition: all 0.4s ease-in-out;
+            &:hover{
+                background: white;
+
+            }
+        }
+    }
+
+}
