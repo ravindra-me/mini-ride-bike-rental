@@ -1,4 +1,5 @@
 #hire{
+    scroll-behavior: smooth;
     .search-box{
         padding: 0.5rem 1rem;
         box-shadow: 0 2px 20px rgba(black,0.2);
@@ -72,11 +73,13 @@
     }
     .overlay{
         position: fixed;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        overflow-y: scroll;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
-        padding: 3rem 0;
         background: rgba($color: #000000, $alpha: 0.8);
         img{
             object-fit: cover;

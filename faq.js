@@ -1,4 +1,4 @@
-var inputs = document.querySelectorAll("input");
+var inputs = document.querySelectorAll(".cross-input");
 
 inputs.forEach(input => {
     input.addEventListener("click",(event) => {

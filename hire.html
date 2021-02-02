@@ -8,18 +8,25 @@
         <link rel="stylesheet" href="./assets/stylesheet/style.css">
     </head>
     <body>
-        <header class="absolute width-100">
+        <header class="absolute width-100 fixed">
             <div class="container flex justify-flex-between  align-flex-center">
-                <a href="#" class="logo">
+                <a href="./index.html" class="logo">
                     <h2 class="secondary-heading">MINI RIDE  <i class="fas fa-motorcycle"></i></h2>
                 </a>
-                <ul class="nav flex">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./about.html">About Us</a></li>
-                    <li><a href="./hire.html">Hire</a></li>
-                    <li><a href="./faq.html">FAQs</a></li>
-                    <li><a href="./contact">Contact Us</a></li>
-                </ul>
+                <label for="toggle-bar" class="toggle-lable">
+                    <i class="fas fa-bars bar" ></i>
+                    <i class="fas fa-times cross display-none"></i>
+                </label>
+                <input type="checkbox" id="toggle-bar" class="toggle-input">
+                <nav>
+                    <ul class="nav flex">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./hire.html">Hire</a></li>
+                        <li><a href="./faq.html">FAQs</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
         <main id="hire">
@@ -31,7 +38,7 @@
                 <section class="span-4 padding bikes-section">
                     <div class="container">
                         <h2 class="secondary-heading text-center">Select your Bike</h2>
-                        <div class="width-30 search-box flex justify-flex-center align-flex-center"><i class="fas fa-search"></i><input type="text" placeholder="serch your bike"></div>
+                        <div class="width-30 search-box flex justify-flex-center align-flex-center"><i class="fas fa-search"></i><input type="text" placeholder="search your bike" class="search"></div>
                         <div class="grid template-column-3 bikes-container gap">
                             <!-- <article>
                                 <div class="font-0"><img src="./assets/imgs/royalEnfield.jpg" class="img" alt="royalEnfield"></div>
@@ -121,10 +128,10 @@
                 <nav>
                     <h3 class="ternary-heading">Site Links</h3>
                     <ul class="#">
-                        <li><a href="#"><i class="fas fa-chevron-right"></i>Home</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i>About Us</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i>Hire</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i>FAQs</a></li>
+                        <li><a href="./index.html"><i class="fas fa-chevron-right"></i>Home</a></li>
+                        <li><a href="./about.html"><i class="fas fa-chevron-right"></i>About Us</a></li>
+                        <li><a href="./hire.html"><i class="fas fa-chevron-right"></i>Hire</a></li>
+                        <li><a href="./faq.html"><i class="fas fa-chevron-right"></i>FAQs</a></li>
                     </ul>
                 </nav>
                 <nav>
@@ -138,16 +145,16 @@
                 <nav>
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="#"><a href="#">Terms & Conditions</a></li>
+                        <li><a href="./faq.html"><a href="#">Terms & Conditions</a></li>
                         <li><a href="#">Blog</a></li>
                     </ul>
                 </nav>
                 <nav class="follow-us">
                     <h3 class="ternary-heading">Follow Us</h3>
                     <ul class="flex">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
                     </ul>
                 </nav>
             </div>

@@ -9,10 +9,37 @@ window.addEventListener("scroll" , (event) => {
     }
 })
 
+
+// header 
+let bar = document.querySelector(".bar");
+let cross = document.querySelector(".cross");
+
+bar.addEventListener("click" , (event)=>{
+    console.log(event.target)
+    cross.classList.remove("display-none");
+    bar.classList.add("display-none");
+})
+
+cross.addEventListener("click" , (event)=>{
+    console.log(event.target)
+    bar.classList.remove("display-none");
+    cross.classList.add("display-none");
+})
+
+
+// bikes container
 let bikesContainer = document.querySelector(".bikes-container");
+const bikeFilter = document.querySelector(".search");
 
+bikeFilter.addEventListener("input" , (event) => {
+    let value = event.target.value.toLowerCase();
+    console.log(value)
+    let filterArr = bikesArr.filter(elm => elm.name.toLowerCase().includes(value))
+    console.log(filterArr)
+    createUi(filterArr);
+})
 
-function createUi(bikesArr) {
+function createUi(bikesArr=bikesArr) {
     let bikesArrCards = bikesArr.map((bike ,index)=> {
         return `
             <article>
@@ -44,6 +71,7 @@ function createUi(bikesArr) {
 createUi(bikesArr);
 
 
+// modal of bike section
 let overlay = document.querySelector(".overlay");
 bikesContainer.addEventListener("click" , (event) =>{
     overlay.innerHTML = ""
@@ -72,7 +100,7 @@ bikesContainer.addEventListener("click" , (event) =>{
         <h2> Fill the form Before Payment </h2>
         <input type="text" placeholder="User Name" class="control-form" required>
         <input type="number" class="control-form" placeholder="Your mobail number" required >
-        <input type="email" placeholder="enter your email"  class="control-form" required>
+        <input type="email" placeholder="enter your email"  class="control-form" require>
         <label for="file"  class="control-form">add driving licence img</label>
         <input type="file" id="file" class="display-none" required>
         <button>submit</bu tton>
@@ -86,25 +114,6 @@ bikesContainer.addEventListener("click" , (event) =>{
         })
     }
 })
-{/* <article>
-    <div class="font-0"><img src="./assets/imgs/royalEnfield.jpg" class="img" alt="royalEnfield"></div>
-    <h3>Royal Enfield 350</h3>
-    <div class="grid template-column-3">
-        <div>
-            <p>Min. Booking</p>
-            <p>5 hr min</p>
-            <p class="price">Rs.450</p>
-        </div>
-        <div>
-            <p>Hourly Rate</p>
-            <p>After 5 hr</p>
-            <p class="price">Rs.29/hr</p>
-        </div>
-        <div>
-            <p>Online Special</p>
-            <p>10%</p>
-            <p class="price">First Ride</p>
-        </div>
-    </div>
-    <a href="#">Book now</a>
-</article> */}
+
+// filter bike 
+
